@@ -1,0 +1,62 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 81,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "gridPos": {
+        "h": 16,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "content": "\u003cbr\u003e\n\u003c!DOCTYPE html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n\u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\"\u003e\n\u003cstyle\u003e\nul, #myUL {\n  list-style-type: none;\n}\n\n#myUL {\n  margin: 0;\n  padding: 0;\n}\n\n\n.active {\n  display: block;\n}\n\u003c/style\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cul id=\"myUL\"\u003e\n\t\t\u003cli\u003e\u003cspan \u003eRNS\u003c/span\u003e\n\t\t\t\u003cul class=\"nested\"\u003e\n          \u003cli\u003e\u003cspan class=\"box\" \u003eUE Terminal\u003c/span\u003e\n\t\t\t\t\t\u003cul class=\"nested\"\u003e\n          \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eUE LQR Reports\u003c/a\u003e\u003c/li\u003e\n\t\t\t\t\t\u003c/ul\u003e\n\t\t\t\t\u003cli\u003e\t\t\t\t\n                  \t\t\u003cli\u003e\u003cspan \u003eBEAM\u003c/span\u003e\n\t\t\t\t\t\u003cul class=\"nested\"\u003e\n                  \t\t\t\t\u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eBEAM1\u003c/a\u003e\u003c/li\u003e\n\t\t\t\t\t\u003c/ul\u003e\n\t\t\t\t\u003cli\u003e\n                  \t\t\u003cli\u003e\u003cspan \u003eCarrier\u003c/span\u003e\n\t\t\t\t\t\u003cul class=\"nested\"\u003e\n                  \t\t\t\t\u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eCarrier1\u003c/a\u003e\u003c/li\u003e\n\t\t\t\t\t\u003c/ul\u003e\n\t\t\t\t\u003cli\u003e\n\t\t\t\u003c/ul\u003e\n\t\t\u003cli\u003e\n\n\t\t\u003cli\u003e\u003cspan class=\"box\" \u003ePTT\u003c/span\u003e\n\t\t\t\u003cul class=\"nested\"\u003e\n                  \t\t\t\t\u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003ePTT1\u003c/a\u003e\u003c/li\u003e\n\t\n\t\t\t\u003c/ul\u003e\t\t\n\t\t\u003cli\u003e\n\t\t\u003cli\u003e\u003cspan class=\"box\" \u003eGRM\u003c/span\u003e\n\t\t\t\u003cul class=\"nested\"\u003e\n                  \t\t\t\t\u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eGRM1\u003c/a\u003e\u003c/li\u003e\n\t\t\t\u003c/ul\u003e\t\t\n\t\t\u003cli\u003e\t\n\t\t\u003cli\u003e\u003cspan class=\"box\" \u003eSysLog\u003c/span\u003e\n\n\t\t\u003cli\u003e\u003cspan class=\"box\" \u003eServer Platform\u003c/span\u003e\n\t\t\t\u003cul class=\"nested\"\u003e\n                  \t\t\t\t\u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eServer HW ilo/ipmi\u003c/a\u003e\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003e\u003ca href=\"http://localhost:3000/d/0qsNdiU7z/servers-overview?orgId=1\"\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eLinux\u003c/a\u003e\u003c/li\u003e\n                  \t\t\t\t\u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eKubernetes\u003c/a\u003e\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eContainer\u003c/a\u003e\u003c/li\u003e\n\t\t\t\u003c/ul\u003e\n\t\t\u003cli\u003e\n\t\t\u003cli\u003e\u003cspan class=\"box\" \u003ePMS Application\u003c/span\u003e\n\t\t\t\u003cul class=\"nested\"\u003e\n                  \t\t\t\t\u003cli\u003e\u003ca href=\"http://localhost:3000/d/0Yn6eZPnk/prometheus?orgId=1\u0026from=now-5m\u0026to=now\" target=\"_blank\"\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003ePrometheus\u003c/a\u003e\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003e\u003ca href=\"http://localhost:3000/d/_9yj6WEnz/grafana?orgId=1\" target=\"_blank\"\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eGrafana\u003c/a\u003e\u003c/li\u003e\n\t\t\t\t\t\t\n\t\t\t\u003c/ul\u003e\n\t\t\u003cli\u003e\t\n\t\t\u003cli\u003e\u003cspan class=\"box\" \u003eDatabase\u003c/span\u003e\n\t\t\t\u003cul class=\"nested\"\u003e\n                \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003ePMS Database\u003c/a\u003e\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eRNS RMC Database\u003c/a\u003e\u003c/li\u003e\n                \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eRNS NMS Database\u003c/a\u003e\u003c/li\u003e\n\t\t\t\t\t\t\n\n\u003cli\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n",
+        "mode": "html"
+      },
+      "pluginVersion": "8.3.3",
+      "title": "Performance Management System",
+      "type": "text"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 34,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "PMS",
+  "uid": "8gsyUgy7z1",
+  "version": 10,
+  "weekStart": ""
+}

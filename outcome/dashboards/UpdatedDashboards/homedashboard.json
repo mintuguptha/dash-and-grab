@@ -1,0 +1,172 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 80,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": null,
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "#25b58b",
+            "mode": "fixed"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 7,
+        "x": 17,
+        "y": 0
+      },
+      "id": 6,
+      "interval": "1s",
+      "libraryPanel": {
+        "description": "",
+        "meta": {
+          "connectedDashboards": 9,
+          "created": "2022-05-24T17:44:38+05:30",
+          "createdBy": {
+            "avatarUrl": "/avatar/46d229b033af06a191ff2267bca9ae56",
+            "id": 1,
+            "name": "admin"
+          },
+          "folderName": "UpdatedDashboards",
+          "folderUid": "EDhlFiU7k",
+          "updated": "2022-06-08T10:56:28+05:30",
+          "updatedBy": {
+            "avatarUrl": "/avatar/46d229b033af06a191ff2267bca9ae56",
+            "id": 1,
+            "name": "admin"
+          }
+        },
+        "name": "updatedTime",
+        "type": "stat",
+        "uid": "kR2Z8jXnz",
+        "version": 5
+      },
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [],
+          "fields": "/^Time$/",
+          "values": false
+        },
+        "text": {
+          "valueSize": 22
+        },
+        "textMode": "value"
+      },
+      "pluginVersion": "8.3.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "wpysClP7z"
+          },
+          "exemplar": false,
+          "expr": "time()",
+          "format": "time_series",
+          "instant": true,
+          "interval": "",
+          "intervalFactor": 1,
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "gridPos": {
+        "h": 15,
+        "w": 24,
+        "x": 0,
+        "y": 1
+      },
+      "id": 2,
+      "options": {
+        "content": "\u003c!DOCTYPE html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n\u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\"\u003e\n\u003cstyle\u003e\nul, #myUL {\n  list-style-type: none;\n}\n\n#myUL {\n  margin: 0;\n  padding: 0;\n}\n\n\n.active {\n  display: block;\n}\n\u003c/style\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cul id=\"myUL\"\u003e\n      \u003cli\u003e\u003cspan class=\"box\" \u003eNetwork Management\u003c/span\u003e          \u003c!--virtual machine box--\u003e\n             \u003cul class=\"nested\"\u003e\n                  \u003cli\u003e\u003ca href=\"/d/8gsyUgy7z1/cobhammaindashboard-icon-section-2_2?orgId=1\"\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003ePMS-Performance Monitoring System\u003c/a\u003e\u003c/li\u003e\n\t\t  \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eFMS-Performance Monitoring System\u003c/a\u003e\u003cli\u003e\n                  \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eRNS-Radio Network Station\u003c/a\u003e\u003c/li\u003e\n                  \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003ePTT-Push To Talk\u003c/a\u003e\u003c/li\u003e\n                  \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eGRM-Global Resource Manager\u003c/a\u003e\u003c/li\u003e           \n              \u003c/ul\u003e\n           \u003cli\u003e\n      \u003cli\u003e\u003cspan class=\"box\" \u003eServer Management\u003c/span\u003e\n             \u003cul class=\"nested\"\u003e\n                  \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eBlade1 oneview\u003c/a\u003e\u003c/li\u003e\n\t\t  \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eServer2 ilo\u003c/a\u003e\u003cli\u003e\n                  \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eServer3 ilo\u003c/a\u003e\u003c/li\u003e\n             \u003c/ul\u003e\n           \u003cli\u003e\n      \u003cli\u003e\u003cspan class=\"box\" \u003eServices\u003c/span\u003e\n             \u003cul class=\"nested\"\u003e\n                  \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003ePostgreSQL UI\u003c/a\u003e\u003c/li\u003e\n\t\t  \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eKubernetes UI\u003c/a\u003e\u003cli\u003e\n                  \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003ePrometheus UI\u003c/a\u003e\u003c/li\u003e\n             \u003c/ul\u003e\n           \u003cli\u003e\n      \u003cli\u003e\u003cspan class=\"box\" \u003eRF Management\u003c/span\u003e\n             \u003cul class=\"nested\"\u003e\n                  \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003eRF Amplifier1\u003c/a\u003e\u003c/li\u003e\n             \u003c/ul\u003e\n           \u003cli\u003e\n      \u003cli\u003e\u003cspan class=\"box\" \u003eRemote Power Strips\u003c/span\u003e\n             \u003cul class=\"nested\"\u003e\n                \u003cli\u003e\u003ca\u003e\u003cimg src=\"public/img/cobhamSatcom/images.png\" width=\"20\" /\u003ePower Supply Rack1\u003c/a\u003e\u003c/li\u003e\n             \u003c/ul\u003e\n           \u003cli\u003e\n       \n\u003c/body\u003e\n\u003c/html\u003e\n",
+        "mode": "html"
+      },
+      "pluginVersion": "8.3.3",
+      "title": "Management UI",
+      "type": "text"
+    },
+    {
+      "gridPos": {
+        "h": 3,
+        "w": 5,
+        "x": 0,
+        "y": 16
+      },
+      "id": 4,
+      "links": [],
+      "options": {
+        "content": "\u003cscript type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js'\u003e\u003c/script\u003e\n\u003cscript type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils.min.js'\u003e\u003c/script\u003e\n\u003cscript type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js'\u003e\u003c/script\u003e\n\n\u003cscript type='text/javascript'\u003e\nfunction resetMessage () {\n    $(\"#result\")\n    .removeClass()\n    .text(\"\");\n    $(\"#apiresult2\")\n    .removeClass()\n    .text(\"\");\n}\nfunction showMessage(text, id) {\n    resetMessage();\n    $(id)\n    .addClass(\"alert alert-success\")\n    .text(text);\n}\nfunction showError(text, id) {\n    resetMessage();\n    $(id)\n    .addClass(\"alert alert-danger\")\n    .text(text);\n}\nfunction updatePercent(percent) {\n    $(\"#progress_bar\").removeClass(\"hide\")\n    .find(\".progress-bar\")\n    .attr(\"aria-valuenow\", percent)\n    .css({\n        width : percent + \"%\"\n    });\n}\n\nfunction urlToPromise(url) {\n    return new Promise(function(resolve, reject) {\n        JSZipUtils.getBinaryContent(url, function (err, data) {\n            if(err) {\n                reject(err);\n            } else {\n                resolve(data);\n            }\n        });\n    });\n}\n\nvar $form = $(\"#download_form\").on(\"submit\", function () {\n\n    resetMessage();\n    showMessage(\"Starting export ...\", \"#result\");\n    if(!JSZip.support.blob) {\n      showError(\"Sorry, this Grafana dashboard works only with a recent browser !\");\n      return;\n    }\n    var Promise = window.Promise;\n    if (!Promise) {\n      Promise = JSZip.external.Promise;\n    }\n\n    var zip = new JSZip();\n\n    // get all dashboards\n    $.ajax({\n        type: 'GET',\n        url: '/api/search',\n        data: 'query=\u0026type=dash-db',\n        dataType: 'json',\n        async: false,\n        success: function (data) {\n            $.each(data, function(index, el) {\n              if ('folderTitle' in el) {\n                zipname = el.folderTitle.replace(/[:/]{1}/g,\"-\") + '/' + el.title.replace(/[:/]{1}/g,\"-\") + '.json';\n              } else {\n                zipname = el.title.replace(/[:/]{1}/g,\"-\") + '.json';\n              }\n              zip.file(zipname, urlToPromise(\"/api/dashboards/uid/\" + el.uid), {binary:true});\n            });\n        }\n    });\n\n    // when everything has been downloaded, we can trigger the dl\n    zip.generateAsync({type:\"blob\"}, function updateCallback(metadata) {\n        var msg = \"Exporting: \" + metadata.percent.toFixed(2) + \" %\";\n        if(metadata.currentFile) {\n            msg += \", processing dashboard: \" + metadata.currentFile;\n        }\n        showMessage(msg, \"#result\");\n        updatePercent(metadata.percent|0);\n    })\n    .then(function callback(blob) {\n        filename = \"grafana-dashboards-\" + new Date().getTime() + \".zip\";\n        saveAs(blob, filename);\n        showMessage(\"Done!\", \"#result\");\n    }, function (e) {\n        showError(e);\n    });\n\n    return false;\n});\n\u003c/script\u003e\n\n\u003cform action=\"#\" id=\"download_form\"\u003e\n    \u003cbutton type=\"submit\" class=\"btn btn-primary\"\u003e\u003ci class=\"fa fa-save\"\u003e\u003c/i\u003e Download all dashboards\u003c/button\u003e\n    \u003cbr/\u003e\u003cbr/\u003e\n\u003c/form\u003e\n\n\u003cdiv class=\"progress hide\" id=\"progress_bar\"\u003e\n    \u003cdiv class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"0\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 0%;\"\u003e\n    \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cp class=\"hide\" id=\"result\"\u003e\u003c/p\u003e",
+        "mode": "html"
+      },
+      "pluginVersion": "8.3.3",
+      "transparent": true,
+      "type": "text"
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 34,
+  "style": "dark",
+  "tags": ["ServerMonitoring"],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "HomeDashboard",
+  "uid": "-ysGOmUnz",
+  "version": 30,
+  "weekStart": ""
+}
